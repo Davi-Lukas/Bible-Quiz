@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const invalidSelectedDifficulty = document.getElementById('error2')
     
         function problemsUserName(name, problem) {
+            invalidSelectedDifficulty.style.display = 'none'
             invalidName.style.display = 'block'
             document.getElementById('username').textContent = name
             document.getElementById('problem').textContent = problem
@@ -29,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         localStorage.setItem('difficulty', selectedDifficulty.value)
                         window.location.href = 'quiz.html'
                     } else {
+                        invalidName.style.display = 'none'
                         invalidSelectedDifficulty.style.display = 'block'
                     }
                 } else {
