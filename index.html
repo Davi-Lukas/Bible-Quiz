@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário Bíblico</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="icon" href="../images/question-mark(3).png" type="images/png">
+</head>
+<body>
+    <img src="../images/question-mark.png" alt="Exemple image" class="header-image">
+    <!------------------------------------------------------------>
+    <img src="../images/question-mark(2).jpg" alt="Background" class="Background">
+    <div class="container">
+        <form id="form">
+            <label for="name">Digite seu nome ou apelido:</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome/apelido">
+            <div id="error" class="error">
+                <p>O nome <span id="username"></span> é inválido, <span id="problem"></span>.</p>
+            </div>
+            <!--Em cima, nome do usuário, embaixo, quantidade de perguntas-->
+            <label for="difficulty">Escolha uma dessas dificuldades:</label>
+            <input type="radio" name="difficulty" id="Easy" value="Fácil">
+            <label for="Easy">Fácil</label>
+            <input type="radio" name="difficulty" id="Medium" value="Médio">
+            <label for="Medium">Médio</label>
+            <input type="radio" name="difficulty" id="Hard" value="Difícil">
+            <label for="Hard">Difícil</label>
+            <div id="error2" class="error2">
+                <p>Por favor, selecione alguma dificuldade.</p>
+            </div>
+            <!--É o botão, usando a tag input, ao invés de usar a tag button-->
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <script src="JS/index.js"></script>
+</body>
+</html>

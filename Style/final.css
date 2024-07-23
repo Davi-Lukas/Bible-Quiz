@@ -1,0 +1,71 @@
+body {
+    background-color: #f0f0f0; /* Cor de fundo */
+    background-image: url('../images/question-mark(2).jpg'); /* Imagem de fundo */
+    background-size: cover; /* A imagem cobre todo o corpo */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-position: center center; /* Centraliza a imagem */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+
+.Background {
+    position: absolute;
+    top: -70px; /* Ajusta a posição da imagem para cima */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px; /* Ajusta o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.header-image {
+    width: 100px; /* Ajuste conforme necessário */
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%) /* Centraliza horizontalmente */
+}
+
+.header-image2 {
+    width: 50px;
+    height: auto;
+    position: relative
+}
+
+.score {
+    text-align: left
+}
+
+.remainQuestions {
+    display: none
+}
+
+.returnToStart {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    transition: 0.5s
+}
+
+.returnToStart:hover {
+    background-color: #0056b3
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    text-align: center;
+    width: 300px
+}
