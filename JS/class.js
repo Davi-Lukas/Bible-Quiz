@@ -23,7 +23,7 @@ export class Quiz {
         { question: 'Qual foi a escrita na tábua pregada na cruz acima da cabeça  de Jesus?', answer: 'INRI', options: ['INRI', 'ENRI', 'INRE', 'ENRE'] },
         { question: 'Quais foram os 3 discípulos que viram a transfiguração?', answer: 'Pedro/Tiago/João', options: ['Pedro/Tiago/João', 'Pedro/Tiago/Lucas', 'Tomé/Tiago/João', 'Pedro/Mateus/João'] },
         { question: 'Quem foi o primeiro mártir cristão?', answer: 'Estêvão', options: ['Estêvão', 'Simão Pedro', 'Paulo', 'Lucas'] },
-        { question: 'Qual apóstolo escreveu mais livros no Novo Testamento?', answer: 'Paulo', options: ['Paulo', 'Simão Pedro', 'Paulo', 'Lucas'] },
+        { question: 'Qual apóstolo escreveu mais livros no Novo Testamento?', answer: 'Paulo', options: ['Paulo', 'Simão Pedro', 'Tomé', 'Lucas'] },
         { question: 'Qual epístola fala sobre a armadura de Deus?', answer: 'Efésios', options: ['Efésios', 'Romanos', 'Filipenses', 'Gálatas'] },
         { question: 'Quem morreu na cruz por nós?', answer: 'Jesus', options: ['Jesus', 'José', 'Josué', 'Jacó'] },
         { question: 'Qual parábola do filho que volta para os braços do pai?', answer: 'Filho pródigo', options: ['Filho pródigo', 'Pai que perdoa', 'Filho arrenpedido', 'Bom samaritano'] },
@@ -34,7 +34,6 @@ export class Quiz {
         { question: 'Deus ama a todos, incluindo cristãos e ímpios?', answer: 'Verdade', options: ['Verdade', 'Mentira', 'Ama apenas os cristãos', 'Ama apenas os ímpios'] }
     ]
     
-    currentQuestionIndex = 0
     correctQuestions = 0
     remainQuestions = null
     correctQuestions = 0
