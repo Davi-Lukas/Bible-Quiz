@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (selectedDifficulty) {
                         localStorage.setItem('name', username)
                         localStorage.setItem('difficulty', selectedDifficulty.value)
-                        window.location.href = '../quiz.html'
+                        window.location.href = 'quiz.html'
                     } else {
                         invalidSelectedDifficulty.style.display = 'block'
                     }

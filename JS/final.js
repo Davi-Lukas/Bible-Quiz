@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         button.textContent = 'Reiniciar jogo'
         button.classList.add('returnToStart')
         button.addEventListener('click', () => {
-            window.location.href = '../index.html'
+            window.location.href = 'index.html'
         })
         buttonContainer.appendChild(button)
     }
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!(correctAnswers && incorrectAnswers && points && reason && difficulty && highPoints && remainQuestions)) {
             alert('O nome, questões corretas, questões incorretas, questões restantes, pontos ou dificuldade não encontrada, volte para a página do formulário.')
-            window.location.href = '../index.html'
+            window.location.href = 'index.html'
         } else {
             if (reason === 'withdrawal') {
                 document.getElementById('remainQuestions').style.display = 'block'
