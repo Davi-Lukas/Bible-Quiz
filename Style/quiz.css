@@ -103,3 +103,32 @@ body {
 .result {
     margin-top: 20px
 }
+
+/* Daqui para baixo, é responsividade */
+
+/* Largura */
+
+@media only screen and (max-width: 600px) {
+    /* if (max-width <= 600px) */
+    .header-image {
+        display: block;
+        width: 70px; /* Ajuste o tamanho para telas menores */
+        top: 50px; /* Ajuste a posição para telas menores se necessário */
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    /* if (max-width <= 400px) */
+    .header-image {
+        display: none;
+    }
+}
+
+/* Altura */
+
+@media only screen and (max-height: 550px) {
+    /* if (max-height <= 550px) */
+    .header-image {
+        display: none;
+    }
+}
