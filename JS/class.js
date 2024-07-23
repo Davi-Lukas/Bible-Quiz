@@ -59,9 +59,7 @@ export class Quiz {
         localStorage.setItem('points', this.points)
         localStorage.setItem('reason', reason)
         localStorage.setItem('highPoints', highPoints)
-        if (reason === 'withdrawal') {
-            localStorage.setItem('remainQuestions', this.remainQuestions)
-        }
+        localStorage.setItem('remainQuestions', this.remainQuestions)
     }
 
     constructor() {
