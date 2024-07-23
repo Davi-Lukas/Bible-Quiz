@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const Confirm = confirm(`Você deseja realmente desistir? Apenas ${quiz.quiz.length} perguntas restantes.`)
             if (Confirm) {
                 quiz.saveInTheLocalStorage('withdrawal', qtdQuestions, highPoints)
-                window.location.href = 'final.html'
+                window.location.href = './final.html'
             }
         })
         buttonContainer.appendChild(button)
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('question').textContent = currentQuestion.question
         } else {
             quiz.saveInTheLocalStorage('answered', qtdQuestions, highPoints)
-            window.location.href = 'final.html'
+            window.location.href = './final.html'
             return // Só para ter certeza, ele vai sair da função
         }
         
