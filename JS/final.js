@@ -16,13 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const points = localStorage.getItem('points')
         const reason = localStorage.getItem('reason')
         const difficulty = localStorage.getItem('difficulty')
-        const highPoints = +localStorage.getItem('highPoints')
         const remainQuestions = localStorage.getItem('remainQuestions')
+        let highPoints = localStorage.getItem('highPoints')
 
-        if (!(correctAnswers && incorrectAnswers && points && reason && difficulty && highPoints && remainQuestions)) {
+        console.log(correctAnswers, incorrectAnswers, points, reason, difficulty, highPoints, remainQuestions)
+
+        if (!(correctAnswers && incorrectAnswers && points && reason && difficulty && remainQuestions && highPoints)) {
             alert('O nome, questões corretas, questões incorretas, questões restantes, pontos ou dificuldade não encontrada, volte para a página do formulário.')
             window.location.href = 'index.html'
         } else {
+            highPoints = +highPoints
             if (reason === 'withdrawal') {
                 document.getElementById('remainQuestions').style.display = 'block'
                 document.getElementById('RemainQuestions').textContent = remainQuestions
